@@ -28,7 +28,7 @@ jobs:
       - name: Synapse workspace deployment
         uses: Azure/Synapse-workspace-deployment@V1.7.0
         with:
-          TargetWorkspaceName: 'uat_devopssynapsep'
+          TargetWorkspaceName: 'uatdevopssynapsep'
           TemplateFile: 'devopssynapsep/TemplateForWorkspace.json'
           ParametersFile: 'devopssynapsep/TemplateParametersForWorkspace.json'
           environment: 'Azure Public'
