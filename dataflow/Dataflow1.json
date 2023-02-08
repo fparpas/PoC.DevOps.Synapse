@@ -32,7 +32,7 @@
 				"     format: 'table',",
 				"     store: 'synapseanalytics',",
 				"     schemaName: 'test',",
-				"     tableName: '',",
+				"     tableName: 'test',",
 				"     isolationLevel: 'READ_UNCOMMITTED',",
 				"     staged: true) ~> source1",
 				"source1 foldDown(unroll(),",
