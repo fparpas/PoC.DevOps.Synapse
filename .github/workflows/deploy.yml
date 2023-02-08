@@ -33,5 +33,8 @@ jobs:
           ParametersFile: './TemplateParametersForWorkspace.json'
           environment: 'Azure Public'
           resourceGroup: 'Synapse'
+          clientId: ${{ secrets.CLIENTID }}
+          clientSecret: ${{ secrets.CLIENTSECRET }}
           subscriptionId: ${{ secrets.SUBID }}
-          managedIdentity: true
+          tenantId: ${{ secrets.TENANTID }}
+          operation: 'deploy'
