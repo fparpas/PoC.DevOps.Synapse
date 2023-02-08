@@ -227,7 +227,7 @@
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"content": {
-					"query": "-- This is auto-generated code\nSELECT\n    TOP 100  *\nFROM\n    OPENROWSET(\n        BULK     'https://azureopendatastorage.blob.core.windows.net/holidaydatacontainer/Processed/*.parquet',\n        FORMAT = 'parquet'\n    ) AS [result];",
+					"query": "-- This is auto-generated code\nSELECT\n    TOP 1000  *\nFROM\n    OPENROWSET(\n        BULK     'https://azureopendatastorage.blob.core.windows.net/holidaydatacontainer/Processed/*.parquet',\n        FORMAT = 'parquet'\n    ) AS [result];",
 					"metadata": {
 						"language": "sql"
 					},
