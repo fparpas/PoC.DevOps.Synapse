@@ -227,7 +227,7 @@
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"content": {
-					"query": "-- This is auto-generated code\nSELECT\n    TOP 100 *\nFROM\n    OPENROWSET(\n        BULK     'https://azureopendatastorage.blob.core.windows.net/holidaydatacontainer/Processed/*.parquet',\n        FORMAT = 'parquet'\n    ) AS [result];",
+					"query": "-- This is auto-generated code\nSELECT\n    TOP 100  *\nFROM\n    OPENROWSET(\n        BULK     'https://azureopendatastorage.blob.core.windows.net/holidaydatacontainer/Processed/*.parquet',\n        FORMAT = 'parquet'\n    ) AS [result];",
 					"metadata": {
 						"language": "sql"
 					},
@@ -298,8 +298,7 @@
 											"Properties": {
 												"HIVE_TYPE_STRING": "string"
 											}
-										},
-										"DeltaFormatInvalidMessages": []
+										}
 									}
 								],
 								"Format": {
@@ -310,8 +309,8 @@
 									"Properties": {
 										"path": "abfss://dlname@devopsdatalakesyn.dfs.core.windows.net/Database1/Table_1",
 										"delimiter": ",",
-										"multiLine": "false",
 										"firstRowAsHeader": "false",
+										"multiLine": "false",
 										"serialization.format": "1",
 										"escape": "\\",
 										"quote": "\"",
