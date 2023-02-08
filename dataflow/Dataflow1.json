@@ -31,7 +31,7 @@
 				"     validateSchema: false,",
 				"     format: 'table',",
 				"     store: 'synapseanalytics',",
-				"     schemaName: '',",
+				"     schemaName: 'test',",
 				"     tableName: '',",
 				"     isolationLevel: 'READ_UNCOMMITTED',",
 				"     staged: true) ~> source1",
