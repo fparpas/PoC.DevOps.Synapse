@@ -29,8 +29,8 @@ jobs:
         uses: Azure/Synapse-workspace-deployment@V1.7.0
         with:
           TargetWorkspaceName: 'uat_devopssynapsep'
-          TemplateFile: './TemplateForWorkspace.json'
-          ParametersFile: './TemplateParametersForWorkspace.json'
+          TemplateFile: 'devopssynapsep/TemplateForWorkspace.json'
+          ParametersFile: 'devopssynapsep/TemplateParametersForWorkspace.json'
           environment: 'Azure Public'
           resourceGroup: 'Synapse'
           clientId: ${{ secrets.CLIENTID }}
